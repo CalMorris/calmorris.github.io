@@ -228,6 +228,6 @@ section {
 
     nav {
         padding: 0 10px;
-    
+        justify-content: center;
     }
 }
