@@ -56,9 +56,6 @@ p {
 aside {
     float: left;
     width: 20%;
-
-    /* display: grid; */
-    justify-items: center;
     background-color:hsl(0, 0%, 98%);
     height: 100vh;
     padding: 20px
@@ -129,14 +126,6 @@ nav div ul li a:hover{
 }
 
 
-
-/* nav div a {
-    text-decoration: none;
-    padding: 20px;
-    text-align: center;
-    text-transform: capitalize;
-} */
-
 .blog-post {
     margin-top: 20px;
     border: 4px #05386b solid;
@@ -188,4 +177,44 @@ section {
 
 #tech-logo-wrapper i{
     width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    aside {
+        clear: both;
+        width: 100%;
+        height: auto;
+        /* background: none; */
+        display: flex;
+        justify-items: center;
+        /* margin: 0 auto; */
+    }
+
+    #homepage-main {
+        clear: both;
+        width: 100%
+    }
+
+    #headshot {
+        width: 200px;
+        border-radius: 50%;
+        border:hsl(0, 0%, 100%) 4px solid;
+        margin: 0 auto;
+        clear: both;
+
+    }
+
+    #blog-tech-learnt {
+        display: none;
+    }
+
+    #tech-logo-wrapper {
+        display: none;
+    }
+}
+    
+@media screen and (max-width: 480px) {
+    #headshot {
+        width: 50%;
+    }
 }
