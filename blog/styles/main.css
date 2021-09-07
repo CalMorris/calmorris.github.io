@@ -217,4 +217,12 @@ section {
     #headshot {
         width: 50%;
     }
+
+    aside {
+        padding: 10px
+    }
+
+    #homepage-main {
+        padding: 10px;
+    }
 }
