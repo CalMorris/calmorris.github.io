@@ -90,7 +90,6 @@ nav {
     justify-content: end;
     border-bottom: hsl(0, 0%, 95%) 2px solid;
     padding: 0 1rem;
-
 }
 
 nav div {
@@ -114,7 +113,7 @@ nav div ul{
 nav div ul li a {
     /* text-decoration: none; */
     text-decoration: none;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
     text-transform: capitalize;
     font-family: var(--nav-link-font);
@@ -125,6 +124,9 @@ nav div ul li a:hover{
     background-color: hsl(0, 0%, 95%);
 }
 
+.active {
+    border-bottom: #000 2px solid;
+}
 
 .blog-post {
     margin-top: 20px;
@@ -139,12 +141,11 @@ nav div ul li a:hover{
 
 section {
     width: 100%;
-
 }
 
 .social-media-link {
     height: 30px;
-
+    padding: 0 20px;
 }
 
 .social-media-link:hover {
