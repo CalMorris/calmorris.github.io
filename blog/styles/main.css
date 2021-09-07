@@ -225,4 +225,9 @@ section {
     #homepage-main {
         padding: 10px;
     }
+
+    nav {
+        padding: 0 10px;
+    
+    }
 }
