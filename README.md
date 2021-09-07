@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-#### You can visit my site here 👉 https://calmorris.github.io/calmorris/
+#### You can visit my site here 👉 https://calmorris.github.io
 
 <!--
 **CalMorris/calmorris** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
