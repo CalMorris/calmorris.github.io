@@ -221,6 +221,14 @@ section {
     #tech-logo-wrapper {
         display: none;
     }
+
+    .blog-post {
+        padding: 0 20px 40px 20px;
+    }
+
+    .blog-image-half {
+        width: 100%;
+      }
 }
     
 @media screen and (max-width: 480px) {
@@ -240,4 +248,12 @@ section {
         padding: 0 10px;
         justify-content: center;
     }
+
+    .blog-post {
+        padding: 0 10px 40px 10px;
+    }
+
+    .blog-image-half {
+        width: 100%;
+      }
 }
