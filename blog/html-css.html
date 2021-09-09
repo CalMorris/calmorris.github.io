@@ -1,78 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS</title>
+    <link rel="stylesheet" href="styles/main.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Rubik&display=swap"
+      rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Space+Grotesk&display=swap"
+      rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8512d2c20f.js"
+      crossorigin="anonymous"></script>
+  </head>
 
-    
-
-  <title>HTML & CSS</title>
-  <link rel="stylesheet" href="styles/main.css" type="text/css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Rubik&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Space+Grotesk&display=swap"
-    rel="stylesheet">
-    <script src="https://kit.fontawesome.com/8512d2c20f.js" crossorigin="anonymous"></script>
-</head>
 
 
+  <body>
+    <nav>
+      <div>
+        <ul>
+          <li><a href="/index.html">Home</a></li>
+          <li><a class="active" href="#">technical blog</a></li>
+          <!-- <li><a href="#">cultural blog</a></li> -->
+        </ul>
+        <a href="https://github.com/CalMorris">
+          <img class='social-media-link' src="img/github-logo.svg"
+            alt="github-link">
+        </a>
+      </div>
+    </nav>
 
-<body>
-  <nav>
-    <div>
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a class="active" href="#">technical blog</a></li>
-        <!-- <li><a href="#">cultural blog</a></li> -->
-      </ul>
-      <a href="https://github.com/CalMorris">
-        <img class='social-media-link' src="img/github-logo.svg" alt="github-link">
-      </a>
-    </div>
-  </nav>
+    <main>
+      <section class='blog-post'>
+        <h1>Best Practices for Using Classes and ID's</h1>
+        <h2>Background</h2>
+        <p>Before we delve into the best practices, let's first begin by
+          discussing what a website is made of and the role ID's and classes
+          play on a website.</p>
+        <p>Websites are made up of Hyper Text Markup Language (HTML) and
+          Cascading Style Sheets (CSS).</p>
+        <p>HTML elements tell your web browser what information the website will
+          contain. For example, a <span class='blog-code-example'>&lt;p&gt;</span>
+          element defines a paragraph of text and an <span
+            class='blog-code-example'>&lt;img&gt;</span> element defines an
+          image. With this information the browser understands of how to treat
+          each element and improve your experience of the website. </p>
+        <p>CSS adds style to your website. It tells your web browser how to
+          present the information to you. For example, what font to use, what
+          colour the background is and how large images are.</p>
+        <p>The HTML elements provide the structure to your website but their
+          default styling is quite bland. Here is an example of a website with
+          no styling:</p>
+        <img class='blog-image-half' src="img/html-css-blog/html-css-1.png"
+          alt="website example">
+        <p>As you can see it is not very appealing and there is a lot of room
+          for improvement. Now that we have some structure, we can begin adding
+          our styling the web page.</p>
+        <p>CSS Styles can be applied directly to elements, but the drawback with
+          this approach is that we are limited in what can be selected. For
+          example, there are 3 images of dogs and we want the second image to be
+          round and with a black border. After adding a <span
+            class="blog-code-example">border</span> and <span
+            class="blog-code-example">border-radius</span> to the <span
+            class='blog-code-example'>&lt;img&gt;</span> element, this is the
+          result:</p>
+        <img class='blog-image-half' src="img/html-css-blog/html-css-2.png"
+          alt="website example">
+        <p>This happens because all of the <span class='blog-code-example'>&lt;img&gt;</span>
+          elements were selected and the browser applied the styling to all of
+          the images. It is very common when building a website to have similar
+          element such as <span class='blog-code-example'>&lt;div&gt;</span>'s
+          where classes and ID's are very useful to transform the web page.</p>
+        <h2>Classes and ID's</h2>
+        <p>ID's and classes act as selectors on a website. Allowing the
+          selection of specific elements and assigning attributes to them. This
+          provides control over where styles are applied and how they are
+          applied. Before you assign an ID or class to an element, it is
+          important to understand the difference between the two selectors.</p>
+        <p class='blog-code-example'><i>The ID selector allows you to define
+            style rules that apply to a <strong>single</strong> element on the
+            web page. </i></p>
+        <p class='blog-code-example'><i>The class selector allows you to define
+            style rules that apply to <strong>any element</strong> with a class
+            attribute equal to a certain value.</i></p>
 
-  <main>
-    <section class='blog-post'>
-    <h1>Best Practices for Using Classes and ID's</h1>
-    <h2>Background</h2>
-    <p>Before we delve into the best practices, let's first begin by discussing what a website is made of and the role ID's and classes play on a website.</p>
-    <p>Websites are made up of Hyper Text Markup Language (HTML) and Cascading Style Sheets (CSS).</p>
-    <p>HTML elements tell your web browser what information the website will contain. For example, a <span class='blog-code-example'>&lt;p&gt;</span> element defines a paragraph of text and an <span class='blog-code-example'>&lt;img&gt;</span> element defines an image. With this information the browser understands of how to treat each element and improve your experience of the website. </p>
-    <p>CSS adds style to your website. It tells your web browser how to present the information to you. For example, what font to use, what colour the background is and how large images are.</p>
-    <p>The HTML elements provide the structure to your website but their default styling is quite bland. Here is an example of a website with no styling:</p>
-    <img class='blog-image-half' src="img/html-css-blog/html-css-1.png" alt="website example">
-    <p>As you can see it is not very appealing and there is a lot of room for improvement. Now that we have some structure, we can begin adding our styling the web page.</p>
-    <p>CSS Styles can be applied directly to elements, but the drawback with this approach is that we are limited in what can be selected. For example, there are 3 images of dogs and we want the second image to be round and with a black border. After adding a <span class="blog-code-example">border</span> and <span class="blog-code-example">border-radius</span> to the <span class='blog-code-example'>&lt;img&gt;</span> element, this is the result:</p>
-    <img class='blog-image-half' src="img/html-css-blog/html-css-2.png" alt="website example">
-    <p>This happens because all of the <span class='blog-code-example'>&lt;img&gt;</span> elements were selected and the browser applied the styling to all of the images. It is very common when building a website to have similar element such as <span class='blog-code-example'>&lt;div&gt;</span>'s where classes and ID's are very useful to transform the web page.</p>
-    
-    <h2>Classes and ID's</h2>
-    <p>ID's and classes act as selectors on a website. Allowing the selection of specific elements and assigning attributes to them. This provides control over where styles are applied and how they are applied. Before you assign an ID or class to an element, it is important to understand the difference between the two selectors.</p>
-    <p class='blog-code-example'><i>The ID selector allows you to define style rules that apply to a <strong>single</strong> element on the web page. </i></p>
-    <p class='blog-code-example'><i>The class selector allows you to define style rules that apply to <strong>any element</strong> with a class attribute equal to a certain value.</i></p>
-    
-    <p>You can assign a class or ID to an element like this <span class='blog-code-example'>&lt;img class='class-name'&gt;</span> or <span class='blog-code-example'>&lt;img id=’id-name&gt;</span>.</p>
-    <p>Below is an example of classes and an ID being assigned to three images. The first and third images are assigned a class to give them a black border. The second image has been assigned with an ID to make the image round along with a black border.</p>
-    <img class='blog-image-half' src="img/html-css-blog/html-css-3.png" alt="website example">
-    <p>This works as intended because the ID is assigned to one element and the class is assigned to multple.</p>
-    
-    <h2>Multiple ID selectors</h2>
-    <p>The browser will apply multiple ID selectors if it has been supplied but it is best practice to use it with a single element. ID selectors have a higher hierarchy than classes and if they are both used on the same element, the ID will have priority. Below is an example of an ID with an attibute of <span class="blog-code-example">border-radius="50%"</span> being added to the first image as well as a class with an attribute of <span class="blog-code-example">border-radius="0%"</span>. Notice how the image is round. This is an example of why an ID should be used on a single element only and used with caution.
-    Click <a href="https://codepen.io/calmorris/pen/rNwjWVB?editors=1100" target="_blank">here</a> to see an example in Codepen.</p>
-    <img class='blog-image-half' src="img/html-css-blog/html-css-4.png" alt="website example">
-    <p>While ID's and classes appear to function in a similar way, ID's have greater functionality. ID's are intended to be unique and as a result have added functionality. They can be used as anchor points on a page which can be hyperlinked to. A user can click on a element that has an ID as a target, which will direct the user to a specific location on the web page.</p> 
-    <p>In addition, JavaScript can access selectors and because ID's are designed for single use, expects to only find one element containing an ID it has been supplied. If the same ID has been added to multiple elements on a single web page, JavaScript will not behave as programmed and may cause bugs in your code.</p>
-    <h2>Conclusion</h2>
-    <p>When designing a website, think about common trends in the design. If you notice a pattern in the elements being used and the style you're giving them, then it's a good idea to use classes. If you are creating something unique, then using an ID is a good choice.</p>
-    <p>
-      If you would like to learn more about other use cases you can read it <a target="_blank" href="https://careerkarma.com/blog/css-class-vs-id-2/">here</a>. 
-    </p>
-    </section>
-  </main>
+        <p>You can assign a class or ID to an element like this <span
+            class='blog-code-example'>&lt;img class='class-name'&gt;</span> or
+          <span class='blog-code-example'>&lt;img id=’id-name&gt;</span>.</p>
+        <p>Below is an example of classes and an ID being assigned to three
+          images. The first and third images are assigned a class to give them a
+          black border. The second image has been assigned with an ID to make
+          the image round along with a black border.</p>
+        <img class='blog-image-half' src="img/html-css-blog/html-css-3.png"
+          alt="website example">
+        <p>This works as intended because the ID is assigned to one element and
+          the class is assigned to multple.</p>
 
-</body>
+        <h2>Multiple ID selectors</h2>
+        <p>The browser will apply multiple ID selectors if it has been supplied
+          but it is best practice to use it with a single element. ID selectors
+          have a higher hierarchy than classes and if they are both used on the
+          same element, the ID will have priority. Below is an example of an ID
+          with an attibute of <span class="blog-code-example">border-radius="50%"</span>
+          being added to the first image as well as a class with an attribute of
+          <span class="blog-code-example">border-radius="0%"</span>. Notice how
+          the image is round. This is an example of why an ID should be used on
+          a single element only and used with caution.
+          Click <a href="https://codepen.io/calmorris/pen/rNwjWVB?editors=1100"
+            target="_blank">here</a> to see an example in Codepen.</p>
+        <img class='blog-image-half' src="img/html-css-blog/html-css-4.png"
+          alt="website example">
+        <p>While ID's and classes appear to function in a similar way, ID's have
+          greater functionality. ID's are intended to be unique and as a result
+          have added functionality. They can be used as anchor points on a page
+          which can be hyperlinked to. A user can click on a element that has an
+          ID as a target, which will direct the user to a specific location on
+          the web page.</p>
+        <p>In addition, JavaScript can access selectors and because ID's are
+          designed for single use, expects to only find one element containing
+          an ID it has been supplied. If the same ID has been added to multiple
+          elements on a single web page, JavaScript will not behave as
+          programmed and may cause bugs in your code.</p>
+        <h2>Conclusion</h2>
+        <p>When designing a website, think about common trends in the design. If
+          you notice a pattern in the elements being used and the style you're
+          giving them, then it's a good idea to use classes. If you are creating
+          something unique, then using an ID is a good choice.</p>
+        <p>
+          If you would like to learn more about other use cases you can read it
+          <a target="_blank"
+            href="https://careerkarma.com/blog/css-class-vs-id-2/">here</a>.
+        </p>
+      </section>
+    </main>
+
+  </body>
 
 </html>
-    
