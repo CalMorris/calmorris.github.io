@@ -85,7 +85,7 @@ aside {
 
 nav {
     width: 100%;
-    height: auto;
+    height: 50px;
     display: flex;
     justify-content: end;
     border-bottom: hsl(0, 0%, 95%) 2px solid;
@@ -127,6 +127,42 @@ nav div ul li a:hover{
 .active {
     border-bottom: #000 2px solid;
 }
+
+.nav-dropdown-content {
+    display: none;
+    width: auto;
+    position: absolute;
+    top: 50px;
+    z-index: 1;
+    padding: 0;
+    background-color: hsl(0, 0%, 96%);
+}
+
+nav ul li:hover .nav-dropdown-content {
+    display: block;
+}
+
+.nav-dropdown-option {
+    /* display: block; */
+    width: 100%;
+    padding: 0; 
+    border-bottom: hsl(0, 0%, 90%) 2px solid;
+    border-right: hsl(0, 0%, 90%) 2px solid;
+    border-left: hsl(0, 0%, 90%) 2px solid;
+}
+
+.nav-dropdown-item {
+    width: 100%;
+    
+    display: block;
+    /* float: none; */
+}
+
+
+
+
+
+
 
 .blog-post {
     padding: 0 15% 40px 15%;
@@ -194,10 +230,8 @@ section {
         clear: both;
         width: 100%;
         height: auto;
-        /* background: none; */
         display: flex;
         justify-items: center;
-        /* margin: 0 auto; */
     }
 
     #homepage-main {

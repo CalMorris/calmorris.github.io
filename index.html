@@ -22,15 +22,42 @@
 
 
   <body>
+
+
     <nav>
       <div>
         <ul>
-          <li><a class="active" href="#">Home</a></li>
-          <li><a href="blog/html-css.html">technical blog</a></li>
-          <!-- <li><a href="#">cultural blog</a></li> -->
+          <li><a class="active" href="/index.html">Home</a></li>
+
+
+          <!-- TECHNICAL -->
+          <li><a href="#">technical blog</a>
+            <ul class='nav-dropdown-content'>
+              <!-- ADD BLOG UNDER HERE -->
+              <li class='nav-dropdown-option'>
+                <a class='nav-dropdown-item' href="/blog/class-id.html">Classes &amp; ID's</a>
+              </li>
+              <!-- ADD BLOG ABOVE HERE -->
+            </ul>
+          </li>
+
+          <!-- CULTURAL -->
+          <li><a href="#">cultural blog</a>
+            <ul class='nav-dropdown-content'>
+              <!-- ADD BLOG UNDER HERE -->
+              <li class='nav-dropdown-option'>
+                <a class='nav-dropdown-item' href="/blog/identity-values.html">identity &amp; values</a>
+              </li>
+              <li class='nav-dropdown-option'>
+                <a class='nav-dropdown-item' href="/blog/learning-plan.html">learning plan</a>
+              </li>
+              <!-- ADD BLOG ABOVE HERE -->
+            </ul>
+          </li>
+
         </ul>
         <a href="https://github.com/CalMorris">
-          <img class='social-media-link' src="blog/img/github-logo.svg"
+          <img class='social-media-link' src="/blog/img/github-logo.svg"
             alt="github-link">
         </a>
       </div>
@@ -38,7 +65,9 @@
 
 
     <aside>
-      <img src="blog/img/headshot-placeholder.png" alt="headshot image"
+      <img
+        src="blog/img/headshot-placeholder.png"
+        alt="headshot image"
         id='headshot'>
       <h3 class='text-center' id="blog-tech-learnt">technologies</h3>
       <div id='tech-logo-wrapper'>
@@ -46,10 +75,6 @@
         <i class="fab fa-css3-alt fa-5x"></i>
         <i class="fab fa-git-alt fa-5x"></i>
         <i class="fab fa-github fa-5x"></i>
-        <!-- <img src="/blog/img/tech-logos/git.png" alt="Git Version Control Logo">
-      <img src="/blog/img/tech-logos/github.png" alt="Github Logo">
-      <img src="/blog/img/tech-logos/html5.png" alt="HTML5 Logo">
-      <img src="/blog/img/tech-logos/css3.png" alt="CSS3 Logo"> -->
       </div>
     </aside>
     <main id='homepage-main'>
