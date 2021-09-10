@@ -8,6 +8,8 @@
     --p-font: 'inter', sans-serif;
     --blog-font-color: #000;
     --nav-link-font: 'Nunito Sans', sans-serif;
+    --text-highlight-color: hsl(0, 0%, 90%);
+    --primary-background-color: hsl(0, 0%, 98%);
     margin: 0;
 }
 
@@ -56,7 +58,7 @@ p {
 aside {
     float: left;
     width: 20%;
-    background-color:hsl(0, 0%, 98%);
+    background-color:var(--primary-background-color);
     height: 100vh;
     padding: 20px
 }
@@ -180,7 +182,7 @@ nav ul li:hover .nav-dropdown-content {
   }
 
 .blog-code-example {
-    background-color: hsl(0, 0%, 90%);
+    background-color: var(--text-highlight-color);
     border-radius: 5px;
 }
 
