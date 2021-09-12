@@ -92,6 +92,7 @@ nav {
     justify-content: end;
     border-bottom: hsl(0, 0%, 95%) 2px solid;
     padding: 0 1rem;
+    flex-wrap: wrap;
 }
 
 nav div {
@@ -147,6 +148,7 @@ nav ul li:hover .nav-dropdown-content {
 
 .nav-dropdown-option {
     /* display: block; */
+    position: relative;
     width: 100%;
     padding: 0; 
     border-bottom: hsl(0, 0%, 90%) 2px solid;
@@ -290,7 +292,64 @@ section {
 
     nav {
         padding: 0 10px;
-        justify-content: center;
+        /* justify-content: center; */
+
+        height: auto;
+    }
+
+    .nav-dropdown-content {
+        width: 100%;
+        /* flex-wrap: wrap; */
+
+        /* display: none; */
+        /* width: auto; */
+        /* position: relative; */
+        /* top: 50px; */
+        /* z-index: 1; */
+        /* padding: 0;
+        background-color: hsl(0, 0%, 96%); */
+    }
+
+    nav div ul{
+        display: block;
+        position: absolute;
+        top: 50px;
+        width: 100%;
+        left: 0;
+        height: auto;
+        background-color: #FFF;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav div li{
+        display: block;
+
+        height: auto;
+        background-color: #FFF;
+        /* padding: 0; */
+        /* margin: 0; */
+    }
+
+    nav div li a{
+        display: block;
+
+        height: auto;
+        background-color: #FFF;
+        width: 100%;
+        /* padding: 0; */
+        /* margin: 0; */
+    }
+
+    .nav-dropdown-content .nav-dropdown-item {
+        display: block;
+        position: relative;
+    }
+
+
+
+    .active {
+        border: none;
     }
 
     .blog-post {
