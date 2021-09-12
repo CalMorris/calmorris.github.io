@@ -18,7 +18,8 @@
     <script src="https://kit.fontawesome.com/8512d2c20f.js"
       crossorigin="anonymous"></script>
 
-      <script data-main="scripts/main" src="scripts/require.js"></script>
+
+      <script src="scripts/main.js" type="text/javascript"></script>
   </head>
 
 
@@ -28,7 +29,7 @@
 
     <nav>
       <div>
-        <ul>
+        <ul class='nav-links'>
           <li><a class="active" href="/index.html">Home</a></li>
 
 
@@ -62,6 +63,10 @@
           <img class='social-media-link' src="/blog/img/github-logo.svg"
             alt="github-link">
         </a>
+      </div>
+      
+      <div class='hamburger-wrapper'>
+        <div class="hamburger-menu"></div>
       </div>
     </nav>
 
@@ -103,15 +108,5 @@
 
 
   </body>
-
-
-<!-- <script>
-  let fs = require('fs');
-  let files = fs.readdirSync('/blog');
-
-  console.log(fs)
-  console.log(files)
-
-</script> -->
 
 </html>
