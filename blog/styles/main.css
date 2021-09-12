@@ -126,6 +126,7 @@ nav div ul li a:hover{
     background-color: hsl(0, 0%, 95%);
 }
 
+
 .active {
     border-bottom: #000 2px solid;
 }
@@ -275,7 +276,8 @@ section {
     }
 
     #headshot {
-        width: 50%;
+        width: 200px;
+        height: 200px;
     }
 
     aside {
