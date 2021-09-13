@@ -126,11 +126,6 @@ nav div ul li a:hover {
     background-color: hsl(0, 0%, 95%);
 }
 
-
-.active {
-    border-bottom: #000 2px solid;
-}
-
 .nav-dropdown-content {
     display: none;
     width: auto;
@@ -175,10 +170,25 @@ nav ul li:hover .nav-dropdown-content {
     /* margin-bottom: 40px; */
 }
 
+.blog-image-full {
+    width: 100%;
+    border: hsl(0, 0%, 90%) 1px solid;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .blog-image-half {
     width: 50%;
     border: hsl(0, 0%, 90%) 1px solid;
     /* border-radius: 10px; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-image-quarter {
+    width: 25%;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -269,6 +279,10 @@ section {
     .blog-image-half {
         width: 100%;
     }
+
+    .blog-image-quarter {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 480px) {
@@ -332,15 +346,16 @@ section {
         border: none;
     }
 
-    .active {
-        border: none;
-    }
 
     .blog-post {
         padding: 0 10px 40px 10px;
     }
 
     .blog-image-half {
+        width: 100%;
+    }
+
+    .blog-image-quarter {
         width: 100%;
     }
 
