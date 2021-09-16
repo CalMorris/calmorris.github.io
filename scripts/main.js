@@ -19,6 +19,10 @@ window.onload = function () {
                             href="/blog/class-id.html">Classes &amp;
                             ID\'s</a>
                     </li>
+                    <li class="nav-dropdown-option">
+                        <a class="nav-dropdown-item"
+                            href="/blog/javascript-dom.html">javaScript &amp; the DOM</a>
+                    </li>
 
                     
                 </ul>

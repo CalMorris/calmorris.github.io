@@ -172,7 +172,7 @@ nav ul li:hover .nav-dropdown-content {
 
 .blog-image-full {
     width: 100%;
-    border: hsl(0, 0%, 90%) 1px solid;
+    /* border: hsl(0, 0%, 90%) 1px solid; */
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -180,7 +180,7 @@ nav ul li:hover .nav-dropdown-content {
 
 .blog-image-half {
     width: 50%;
-    border: hsl(0, 0%, 90%) 1px solid;
+    /* border: hsl(0, 0%, 90%) 1px solid; */
     /* border-radius: 10px; */
     display: block;
     margin-left: auto;
