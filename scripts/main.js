@@ -1,15 +1,12 @@
 window.onload = function () {
+  function loadNavbar() {
+    const navbar = document.querySelector("nav");
 
-
-    function loadNavbar() {
-
-        const navbar = document.querySelector('nav')
-    
-        const navbarContent = `<div>
+    const navbarContent = `<div>
         <ul class="nav-links">
             <li><a href='/index.html'>Home</a></li>
             
-            ${ /* TECHNICAL BLOG */'' }
+            ${/* TECHNICAL BLOG */ ""}
 
             <li><a href="#">technical blog</a>
                 <ul class="nav-dropdown-content">
@@ -27,7 +24,7 @@ window.onload = function () {
                     
                 </ul>
             </li>
-            ${ /* CULTURAL BLOG */'' }
+            ${/* CULTURAL BLOG */ ""}
       
             <li><a href="#">cultural blog</a>
                 <ul class="nav-dropdown-content">
@@ -48,6 +45,10 @@ window.onload = function () {
                             href="/blog/emotional-intelligence.html">emotional
                             intelligence</a>
                     </li>
+                    <li class="nav-dropdown-option">
+                        <a class="nav-dropdown-item"
+                            href="/blog/neuroplasticity.html">neuroplasticity & mindset</a>
+                    </li>
                    
                 </ul>
             </li>
@@ -62,25 +63,25 @@ window.onload = function () {
     
     <div class="hamburger-wrapper">
         <div class="hamburger-menu"></div>
-    </div>`
-    
-    navbar.innerHTML = navbarContent;
-    }
-    
-    loadNavbar()
+    </div>`;
 
-function hamburgerDropdown () {
-    const links = document.querySelector('.nav-links');
-    const hamburgerMenu = document.querySelector('.hamburger-wrapper');
+    navbar.innerHTML = navbarContent;
+  }
+
+  loadNavbar();
+
+  function hamburgerDropdown() {
+    const links = document.querySelector(".nav-links");
+    const hamburgerMenu = document.querySelector(".hamburger-wrapper");
 
     hamburgerMenu.addEventListener("click", () => {
-        if (links.style.display === 'none' || links.style.display === '') {
-            links.style.display = 'block'
-        } else {
-            links.style.display = 'none'
-        };
+      if (links.style.display === "none" || links.style.display === "") {
+        links.style.display = "block";
+      } else {
+        links.style.display = "none";
+      }
     });
-}
+  }
 
-hamburgerDropdown();
-}
+  hamburgerDropdown();
+};
