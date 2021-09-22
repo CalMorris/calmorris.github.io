@@ -23,6 +23,10 @@ body {
   height: 100vh;
 }
 
+main {
+  padding-bottom: 2rem;
+}
+
 h1 {
   font-size: 3rem;
   font-family: var(--h1-font);

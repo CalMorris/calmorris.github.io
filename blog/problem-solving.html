@@ -27,7 +27,6 @@
         <nav>
         </nav>
 
-
         <main>
             <section class='blog-post'>
                 <h1>Problem Solving Techniques with JavaScript</h1>
@@ -46,7 +45,8 @@
                     <p>Rather than muddling through the de-bugging process and
                         hoping to accidentally find a solution, there are a
                         range of techniques and tools which can be used to aid
-                        the problem solving process.
+                        the problem solving process. On that note, here are a
+                        few strategies:
                     </p>
                     <h2>Pseudocode</h2>
                     <p>Pseudocode is the first step. Before writing any code,
@@ -65,7 +65,7 @@
                     <ul>
                         <li>
                             <p>
-                                <strong>Better readability.</strong> Easy to
+                                <strong>Improved readability.</strong> Easy to
                                 understand steps for reaching the desired
                                 outcome.
                                 This can be shared with colleagues who can
@@ -73,7 +73,7 @@
                                 the project without the need to ask questions as
                                 the
                                 work has been documented. Non-technical staff
-                                can
+                                can also
                                 review code and understand how it works without
                                 the
                                 need to learn a programming language.
@@ -147,6 +147,17 @@
                             </p>
                         </li>
                     </ul>
+
+                    <p>
+                        If you would like to learn more about pseudocode, the
+                        links below are great resources.
+                    </p>
+                    <p><a target="_blank"
+                            href="https://towardsdatascience.com/pseudocode-101-an-introduction-to-writing-good-pseudocode-1331cb855be7">An
+                            Introduction to Writing Good Pseudocode</a></p>
+                    <p><a target="_blank"
+                            href="https://medium.com/@ngunyimacharia/how-to-write-pseudocode-a-beginners-guide-29956242698">How
+                            to write Pseudocode: A beginner’s guide</a></p>
                 </section>
 
                 <section>
@@ -259,7 +270,7 @@
                         While practicing manipulating objects in the JavaScript
                         Kata exercises at Dev Academy, one task included
                         accessing an object which contained a list of students
-                        and their grades. The task included adding a score to a
+                        and their grades. The goal was to add a score to a
                         student. To perform this, the function needed to access
                         the object, the individual by name, the testScores
                         property and then the array of results.
@@ -278,7 +289,7 @@
                         To access properties in an object, the dot(“.”) and
                         square bracket (“[ ]”) notation can be applied. While
                         attempting to access the scores, I used the dot natation
-                        and console.log'd it like this:
+                        and console.logged it like this:
                     </p>
                     <p class="blog-code-example">
                         function(gradebook, name, score) {<br>
@@ -293,14 +304,18 @@
                         undefined.
                     </p>
                     <p>
-                        In response I copied and pasted the error message into
+                        To help interpret this error, I copied the error message
+                        into
                         google and found no obvious answer’s. After that
-                        approach did not work I began googling dot and bracket
+                        approach did not work, I began googling dot and bracket
                         notation for JavaScript and read articles on how it is
-                        meant to be used. I found that dot notation cannot be
+                        meant to be used. I found out that dot notation cannot
+                        be
                         used to access an object with a variable because it is
-                        not a property. So instead I used bracket notation on
-                        the variable and then used console.log to test this.
+                        not a property. Instead using bracket notation for
+                        this portion of the code would be needed.
+                        Once the changes were made, I used console.log to test
+                        this approach.
                     </p>
                     <p class="blog-code-example">
                         function(gradebook, name, score) {<br>
@@ -310,6 +325,9 @@
                     <p>
                         This worked perfectly and I was able to complete the
                         challenge.
+                    </p>
+                    <p class="blog-code-example">
+                        output: [ 85, 80, 90, 90 ]
                     </p>
                 </section>
 
