@@ -211,6 +211,7 @@ section ul {
   background-color: var(--text-highlight-color);
   border-radius: 5px;
   padding: 1em;
+  overflow-wrap: break-word;
 }
 
 .blog-code-paragraph-text {
@@ -404,5 +405,9 @@ section {
 
   .hamburger-menu::before {
     transform: translateY(8px);
+  }
+
+  .blog-code-example {
+    font-size: 1rem;
   }
 }
