@@ -48,6 +48,11 @@ p {
   letter-spacing: 1px;
 }
 
+p a {
+  text-decoration: none;
+  color: #3d57d8;
+}
+
 /* CONTENT STYLES */
 
 aside {
@@ -162,6 +167,18 @@ nav ul li:hover .nav-dropdown-content {
   /* margin-bottom: 40px; */
 }
 
+li p {
+  display: inline;
+  font-size: 1.2rem;
+  font-family: var(--p-font);
+  font-family: 100;
+  letter-spacing: 1px;
+  line-height: 1.6;
+}
+section ul {
+  list-style-position: outside;
+}
+
 .blog-image-full {
   width: 100%;
   /* border: hsl(0, 0%, 90%) 1px solid; */
@@ -189,6 +206,13 @@ nav ul li:hover .nav-dropdown-content {
 .blog-code-example {
   background-color: var(--text-highlight-color);
   border-radius: 5px;
+  padding: 1em;
+}
+
+.blog-code-paragraph-text {
+  background-color: var(--text-highlight-color);
+  border-radius: 5px;
+  padding: 0 3px;
 }
 
 section {

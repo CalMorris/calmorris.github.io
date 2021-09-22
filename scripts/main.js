@@ -22,7 +22,7 @@ window.onload = function () {
                     </li>
                     <li class="nav-dropdown-option">
                         <a class="nav-dropdown-item"
-                            href="/blog/problem-solving.html.html">problem solving</a>
+                            href="/blog/problem-solving.html">problem solving</a>
                     </li>
 
                     
