@@ -55,7 +55,7 @@ window.onload = function () {
                     </li>
                     <li class="nav-dropdown-option">
                         <a class="nav-dropdown-item"
-                            href="/blog/foundations-reflections.html">foundations reflections</a>
+                            href="/blog/foundations-reflection.html">foundations reflections</a>
                     </li>
                    
                 </ul>
